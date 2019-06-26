@@ -6,7 +6,6 @@
       <class name="Tests.LoginTests">
         <methods>
           <include name="CloseBrowser"/>
-          <include name="Login_Valid"/>
           <include name="driver"/>
           <include name="Forgot_Password"/>
         </methods>

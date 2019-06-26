@@ -7,19 +7,18 @@ import Pages.LoginPage;
 
 public class LoginTests extends BaseTest {
 
-	 @Test (priority = 1)
+	 @Test (priority = 0)
 	    public void Login_Valid () {
 	 
 	        //*************PAGE INSTANTIATIONS*************
 	        LoginPage LoginPage = new LoginPage(driver);
 	 
 	        //*************PAGE METHODS********************
-	        LoginPage.logintocarpal("onur@swtestacademy.com", "11223344");
-	       
+	        LoginPage.logintocarpal("sysadmin", "Sys@admin21");
 	 }
 	 
 	 
-	 @Test (priority = 0)
+	 @Test (priority = 1)
 	 public void Forgot_Password() {
 		 
 		 	//*************PAGE INSTANTIATIONS*************
@@ -27,6 +26,7 @@ public class LoginTests extends BaseTest {
 	      
 	        //*************PAGE METHODS********************
 	        LoginPage.forgotpassword("mujtaba@mailinator.com");
+	        
 	 } 
 	 
 }

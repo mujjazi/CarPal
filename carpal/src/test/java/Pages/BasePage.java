@@ -40,6 +40,17 @@ public class BasePage {
         return driver.findElement(elementBy).getText();
     }
     
+    //Text Present
+    protected boolean isTextPresent(String text){
+        try{
+            boolean b = driver.getPageSource().contains(text);
+            return b;
+        }
+        catch(Exception e){
+            return false;
+        }
+      }
+    
     //Element Present
     public boolean isElementPresent(By locatorKey) {
         try {

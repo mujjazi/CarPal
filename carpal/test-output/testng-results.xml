@@ -1,217 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89635" started-at="2019-06-25T12:19:17Z" finished-at="2019-06-25T12:20:47Z">
+  <suite name="Default suite" duration-ms="26086" started-at="2019-06-26T09:38:41Z" finished-at="2019-06-26T09:39:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89635" started-at="2019-06-25T12:19:17Z" finished-at="2019-06-25T12:20:47Z">
+    <test name="Default test" duration-ms="26086" started-at="2019-06-26T09:38:41Z" finished-at="2019-06-26T09:39:07Z">
       <class name="Tests.LoginTests">
-        <test-method status="PASS" signature="driver()[pri:0, instance:Tests.LoginTests@14acaea5]" name="driver" is-config="true" duration-ms="88859" started-at="2019-06-25T12:19:17Z" finished-at="2019-06-25T12:20:46Z">
+        <test-method status="PASS" signature="driver()[pri:0, instance:Tests.LoginTests@8bd1b6a]" name="driver" is-config="true" duration-ms="18633" started-at="2019-06-26T09:38:41Z" finished-at="2019-06-26T09:39:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method status="FAIL" signature="Forgot_Password()[pri:0, instance:Tests.LoginTests@14acaea5]" name="Forgot_Password" duration-ms="672" started-at="2019-06-25T12:20:46Z" finished-at="2019-06-25T12:20:47Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to decode response from marionette
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUJTAB-LTP', ip: '10.224.6.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1036, moz:profile: C:\Users\Mujtaba.m\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: aa48a7d9-1eff-4260-8bc2-e725fe53aed9
-*** Element info: {Using=partial link text, value=Forgot}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUJTAB-LTP', ip: '10.224.6.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1036, moz:profile: C:\Users\Mujtaba.m\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: aa48a7d9-1eff-4260-8bc2-e725fe53aed9
-*** Element info: {Using=partial link text, value=Forgot}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementsByPartialLinkText(RemoteWebDriver.java:392)
-at org.openqa.selenium.By$ByPartialLinkText.findElements(By.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:231)
-at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:228)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at Pages.BasePage.waitVisibility(BasePage.java:22)
-at Pages.BasePage.click(BasePage.java:27)
-at Pages.LoginPage.forgotpassword(LoginPage.java:36)
-at Tests.LoginTests.Forgot_Password(LoginTests.java:29)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Forgot_Password -->
-        <test-method status="FAIL" signature="Login_Valid()[pri:1, instance:Tests.LoginTests@14acaea5]" name="Login_Valid" duration-ms="6" started-at="2019-06-25T12:20:47Z" finished-at="2019-06-25T12:20:47Z">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUJTAB-LTP', ip: '10.224.6.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1036, moz:profile: C:\Users\Mujtaba.m\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: aa48a7d9-1eff-4260-8bc2-e725fe53aed9
-*** Element info: {Using=name, value=userName}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUJTAB-LTP', ip: '10.224.6.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1036, moz:profile: C:\Users\Mujtaba.m\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: aa48a7d9-1eff-4260-8bc2-e725fe53aed9
-*** Element info: {Using=name, value=userName}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementsByName(RemoteWebDriver.java:408)
-at org.openqa.selenium.By$ByName.findElements(By.java:276)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:231)
-at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:228)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at Pages.BasePage.waitVisibility(BasePage.java:22)
-at Pages.BasePage.writeText(BasePage.java:33)
-at Pages.LoginPage.logintocarpal(LoginPage.java:29)
-at Tests.LoginTests.Login_Valid(LoginTests.java:17)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method status="PASS" signature="Login_Valid()[pri:0, instance:Tests.LoginTests@8bd1b6a]" name="Login_Valid" duration-ms="5630" started-at="2019-06-26T09:39:00Z" finished-at="2019-06-26T09:39:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_Valid -->
-        <test-method status="FAIL" signature="CloseBrowser()[pri:0, instance:Tests.LoginTests@14acaea5]" name="CloseBrowser" is-config="true" duration-ms="55" started-at="2019-06-25T12:20:47Z" finished-at="2019-06-25T12:20:47Z">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUJTAB-LTP', ip: '10.224.6.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1036, moz:profile: C:\Users\Mujtaba.m\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: aa48a7d9-1eff-4260-8bc2-e725fe53aed9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUJTAB-LTP', ip: '10.224.6.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1036, moz:profile: C:\Users\Mujtaba.m\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: aa48a7d9-1eff-4260-8bc2-e725fe53aed9
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
-at Tests.BaseTest.CloseBrowser(BaseTest.java:26)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method status="PASS" signature="Forgot_Password()[pri:1, instance:Tests.LoginTests@8bd1b6a]" name="Forgot_Password" duration-ms="796" started-at="2019-06-26T09:39:05Z" finished-at="2019-06-26T09:39:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Forgot_Password -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Tests.LoginTests@8bd1b6a]" name="CloseBrowser" is-config="true" duration-ms="982" started-at="2019-06-26T09:39:06Z" finished-at="2019-06-26T09:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
