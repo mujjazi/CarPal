@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.LoginTests">
+      <class name="Tests.CreateBUTest">
         <methods>
           <include name="CloseBrowser"/>
+          <include name="Create_BU"/>
           <include name="driver"/>
-          <include name="Forgot_Password"/>
         </methods>
-      </class> <!-- Tests.LoginTests -->
+      </class> <!-- Tests.CreateBUTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

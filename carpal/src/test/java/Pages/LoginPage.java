@@ -14,10 +14,6 @@ public class LoginPage extends BasePage {
 	}
 	
 	
-	//URL
-	
-	String baseURL = "http://35.232.136.118.xip.io/login";
-	
 	//********************Web Elements***************************
 	
 	By usernameBy = By.name("userName");
@@ -56,11 +52,6 @@ public class LoginPage extends BasePage {
 		writeText(forgotemailBy,username);
 		click(resetBy);
 		driver.navigate().back();
-		//writeText(passwordBy,password);
-		//assertEquals(toastBy,"Notification");
-		//System.out.print(isElementVisible(toastBy));
-		//System.out.print(isElementPresent(toastBy));
-	//	assertTrue(driver.findElement(toastBy).isDisplayed());
 		return this;
 	}
 

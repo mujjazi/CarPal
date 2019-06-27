@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26086" started-at="2019-06-26T09:38:41Z" finished-at="2019-06-26T09:39:07Z">
+  <suite name="Default suite" duration-ms="58660" started-at="2019-06-27T06:42:33Z" finished-at="2019-06-27T06:43:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26086" started-at="2019-06-26T09:38:41Z" finished-at="2019-06-26T09:39:07Z">
-      <class name="Tests.LoginTests">
-        <test-method status="PASS" signature="driver()[pri:0, instance:Tests.LoginTests@8bd1b6a]" name="driver" is-config="true" duration-ms="18633" started-at="2019-06-26T09:38:41Z" finished-at="2019-06-26T09:39:00Z">
+    <test name="Default test" duration-ms="58660" started-at="2019-06-27T06:42:33Z" finished-at="2019-06-27T06:43:32Z">
+      <class name="Tests.CreateBUTest">
+        <test-method status="PASS" signature="driver()[pri:0, instance:Tests.CreateBUTest@cb5822]" name="driver" is-config="true" duration-ms="43217" started-at="2019-06-27T06:42:33Z" finished-at="2019-06-27T06:43:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method status="PASS" signature="Login_Valid()[pri:0, instance:Tests.LoginTests@8bd1b6a]" name="Login_Valid" duration-ms="5630" started-at="2019-06-26T09:39:00Z" finished-at="2019-06-26T09:39:05Z">
+        <test-method status="PASS" signature="Create_BU()[pri:0, instance:Tests.CreateBUTest@cb5822]" name="Create_BU" duration-ms="14404" started-at="2019-06-27T06:43:16Z" finished-at="2019-06-27T06:43:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_Valid -->
-        <test-method status="PASS" signature="Forgot_Password()[pri:1, instance:Tests.LoginTests@8bd1b6a]" name="Forgot_Password" duration-ms="796" started-at="2019-06-26T09:39:05Z" finished-at="2019-06-26T09:39:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Forgot_Password -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Tests.LoginTests@8bd1b6a]" name="CloseBrowser" is-config="true" duration-ms="982" started-at="2019-06-26T09:39:06Z" finished-at="2019-06-26T09:39:07Z">
+        </test-method> <!-- Create_BU -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Tests.CreateBUTest@cb5822]" name="CloseBrowser" is-config="true" duration-ms="1000" started-at="2019-06-27T06:43:31Z" finished-at="2019-06-27T06:43:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- Tests.LoginTests -->
+      </class> <!-- Tests.CreateBUTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -25,7 +25,7 @@ public class LoginTests extends BaseTest {
 	        LoginPage LoginPage = new LoginPage(driver);
 	      
 	        //*************PAGE METHODS********************
-	        LoginPage.forgotpassword("mujtaba@mailinator.com");
+	        LoginPage.forgotpassword("mujtaba26@mailinator.com");
 	        
 	 } 
 	 
