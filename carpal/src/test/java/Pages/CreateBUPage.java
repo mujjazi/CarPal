@@ -62,7 +62,7 @@ public class CreateBUPage extends BasePage {
 			el.click();
 			WebElement el1 = driver.findElements(dropdownBy).get(0);
 			el1.click();
-			writeText(trnBy,"1234");
+			writeText(trnBy,"1231212124");
 			writeText(companyphonenumberBy,"1234567");
 			writeText(cityBy,"Islamabad");
 			writeText(areaBy,"F-7");
@@ -86,8 +86,7 @@ public class CreateBUPage extends BasePage {
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
 			
-			//el2.sendKeys("C:\\Users\\Mujtaba.m\\Desktop\\Design-Test\\icn.PNG");
-		//	WebElement createbtn = driver.findElement(btncreatebuBy);
+			
 			WebElement scroll = driver.findElement(By.tagName("html"));
 			scroll.sendKeys(Keys.END);
 			
