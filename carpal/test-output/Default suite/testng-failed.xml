@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.CreateBUTest">
+      <class name="Tests.HomePageTest">
         <methods>
           <include name="CloseBrowser"/>
-          <include name="Create_BU"/>
+          <include name="viewBUlink"/>
           <include name="driver"/>
+          <include name="createBUlink"/>
         </methods>
-      </class> <!-- Tests.CreateBUTest -->
+      </class> <!-- Tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
