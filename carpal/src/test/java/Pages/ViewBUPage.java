@@ -20,9 +20,10 @@ public class ViewBUPage extends BasePage {
 	
 	//********************Web Elements***************************
 	
-			By searchbuBy = By.partialLinkText("Create a New Business Unit");
-			By companynameBy = By.id("companyName");
-	
+			By searchbuBy = By.partialLinkText("View list of Business Units");
+			By searchfieldBy = By.className("form-control");
+			By buBy = By.partialLinkText("Test");
+			By updateBy = By.name("updateSubmit");
 			long millis = System.currentTimeMillis();
 			
 
@@ -31,7 +32,22 @@ public class ViewBUPage extends BasePage {
 			public ViewBUPage searchBU (String query) throws AWTException {
 				
 				click(searchbuBy);
-				writeText(searchbuBy,query);
+				WebElement els = driver.findElements(searchfieldBy).get(0);
+				els.sendKeys(query);
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				click(buBy);
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				Assert.assertTrue(driver.findElement(updateBy).isDisplayed());
 				//Click on searched BU
 				//Verify searched BU is appearing and correct
 				

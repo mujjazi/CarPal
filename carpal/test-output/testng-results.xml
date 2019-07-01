@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="151930" started-at="2019-06-28T07:32:39Z" finished-at="2019-06-28T07:35:10Z">
+  <suite name="Default suite" duration-ms="46598" started-at="2019-07-01T09:13:19Z" finished-at="2019-07-01T09:14:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="151930" started-at="2019-06-28T07:32:39Z" finished-at="2019-06-28T07:35:10Z">
-      <class name="Tests.HomePageTest">
-        <test-method status="PASS" signature="driver()[pri:0, instance:Tests.HomePageTest@cb5822]" name="driver" is-config="true" duration-ms="138736" started-at="2019-06-28T07:32:39Z" finished-at="2019-06-28T07:34:57Z">
+    <test name="Default test" duration-ms="46598" started-at="2019-07-01T09:13:19Z" finished-at="2019-07-01T09:14:06Z">
+      <class name="Tests.ViewBUPageTest">
+        <test-method status="PASS" signature="driver()[pri:0, instance:Tests.ViewBUPageTest@cb5822]" name="driver" is-config="true" duration-ms="37168" started-at="2019-07-01T09:13:19Z" finished-at="2019-07-01T09:13:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method status="PASS" signature="createBUlink()[pri:0, instance:Tests.HomePageTest@cb5822]" name="createBUlink" duration-ms="5745" started-at="2019-06-28T07:34:57Z" finished-at="2019-06-28T07:35:03Z">
+        <test-method status="PASS" signature="searchBU()[pri:0, instance:Tests.ViewBUPageTest@cb5822]" name="searchBU" duration-ms="8398" started-at="2019-07-01T09:13:56Z" finished-at="2019-07-01T09:14:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createBUlink -->
-        <test-method status="PASS" signature="viewBUlink()[pri:1, instance:Tests.HomePageTest@cb5822]" name="viewBUlink" duration-ms="6490" started-at="2019-06-28T07:35:03Z" finished-at="2019-06-28T07:35:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewBUlink -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Tests.HomePageTest@cb5822]" name="CloseBrowser" is-config="true" duration-ms="913" started-at="2019-06-28T07:35:10Z" finished-at="2019-06-28T07:35:10Z">
+        </test-method> <!-- searchBU -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Tests.ViewBUPageTest@cb5822]" name="CloseBrowser" is-config="true" duration-ms="993" started-at="2019-07-01T09:14:05Z" finished-at="2019-07-01T09:14:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- Tests.HomePageTest -->
+      </class> <!-- Tests.ViewBUPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
