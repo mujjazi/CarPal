@@ -83,12 +83,24 @@ public class CreateBUPage extends BasePage {
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
 			
-			
 			WebElement scroll = driver.findElement(By.tagName("html"));
 			scroll.sendKeys(Keys.END);
+			
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 			waitVisibility(btncreatebuBy);
 			click(btncreatebuBy);
@@ -99,6 +111,7 @@ public class CreateBUPage extends BasePage {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			
 			String URL = driver.getCurrentUrl();
 			Assert.assertEquals(URL,"http://35.232.136.118.xip.io/ma/list-bu");
 		//	driver.navigate().back();
