@@ -5,6 +5,7 @@ Automated Testing of Web and Mobile application Carpal, This project is automate
 
 ### Requirements:
 
+- Microsoft Windows 7/8/10
 - JDK
 - Eclipse IDE 2018-12
 - Selenium Webdriver
