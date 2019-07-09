@@ -1,7 +1,8 @@
 # CarPal
 Automated Testing of Web and Mobile application Carpal, This project is automated using Java-TestNG-maven-Selenium Framework using Page Object Model
 
-# # How to setup this project on your computer:
+# How to setup this project on your computer:
+
 ### Requirements:
 
 - JDK
