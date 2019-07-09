@@ -16,6 +16,15 @@ public class BasePage {
         this.driver = driver;
         wait = new WebDriverWait(driver,15);
     }
+    
+    public void ajax_wait() {
+    	try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+    }
  
     //Wait Wrapper Method
     public void waitVisibility(By elementBy) {
