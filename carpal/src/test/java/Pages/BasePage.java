@@ -2,6 +2,7 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -24,6 +25,12 @@ public class BasePage {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+    }
+    
+    public void click_list(By loc, int ind) {
+    	
+    	WebElement el = driver.findElements(loc).get(ind);
+    	el.click();
     }
  
     //Wait Wrapper Method

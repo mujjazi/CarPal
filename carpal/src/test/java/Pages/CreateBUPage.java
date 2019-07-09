@@ -48,20 +48,13 @@ public class CreateBUPage extends BasePage {
 			
 			
 			click(createbuBy);
-			try {
-				Thread.sleep(5000);
-			} catch (InterruptedException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
+			ajax_wait();
 			click(companynameBy);
 			writeText(companynameBy,companyname);
 			click(companydescriptionBy);
 			writeText(companydescriptionBy,companydescription);
-			WebElement el = driver.findElements(countriesBy).get(1);
-			el.click();
-			WebElement el1 = driver.findElements(dropdownBy).get(0);
-			el1.click();
+			click_list(countriesBy,1);
+			click_list(dropdownBy,0);
 			writeText(trnBy,"1231212124");
 			writeText(companyphonenumberBy,"1234567");
 			writeText(cityBy,"Islamabad");
@@ -72,8 +65,8 @@ public class CreateBUPage extends BasePage {
 			writeText(contactpersonphoneBy,"12345678");
 			writeText(contactpersonemailBy,"mujtaba+"+ millis + "@mailinator.com");
 			
-			WebElement el2 = driver.findElements(btnBy).get(0);
-			el2.click();
+			click_list(btnBy,0);
+			
 			StringSelection ss = new StringSelection("C:\\Users\\Mujtaba.m\\Desktop\\CarPal-POM\\carpal\\src\\test\\resources\\Images\\icn.PNG");
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 			
@@ -83,38 +76,23 @@ public class CreateBUPage extends BasePage {
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
-			try {
-				Thread.sleep(5000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			ajax_wait();
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
 			
 			WebElement scroll = driver.findElement(By.tagName("html"));
 			scroll.sendKeys(Keys.END);
 			
-			try {
-				Thread.sleep(5000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			ajax_wait();
 			
 			waitVisibility(btncreatebuBy);
 			click(btncreatebuBy);
 			
-			try {
-				Thread.sleep(5000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			ajax_wait();
 			
 			String URL = driver.getCurrentUrl();
 			Assert.assertEquals(URL,"http://35.232.136.118.xip.io/ma/list-bu");
-		//	driver.navigate().back();
+
 			return this;
 		}
 		
