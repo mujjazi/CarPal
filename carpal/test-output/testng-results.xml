@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="60825" started-at="2019-07-09T06:53:24Z" finished-at="2019-07-09T06:54:25Z">
+  <suite name="Default suite" duration-ms="47870" started-at="2019-07-09T08:15:06Z" finished-at="2019-07-09T08:15:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="60825" started-at="2019-07-09T06:53:24Z" finished-at="2019-07-09T06:54:25Z">
-      <class name="Tests.UpdateUserRoleTest">
-        <test-method status="PASS" signature="driver()[pri:0, instance:Tests.UpdateUserRoleTest@cb5822]" name="driver" is-config="true" duration-ms="48960" started-at="2019-07-09T06:53:24Z" finished-at="2019-07-09T06:54:13Z">
+    <test name="Default test" duration-ms="47870" started-at="2019-07-09T08:15:06Z" finished-at="2019-07-09T08:15:54Z">
+      <class name="Tests.AssignUserRoleTest">
+        <test-method status="PASS" signature="driver()[pri:0, instance:Tests.AssignUserRoleTest@cb5822]" name="driver" is-config="true" duration-ms="32282" started-at="2019-07-09T08:15:06Z" finished-at="2019-07-09T08:15:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method status="PASS" signature="Update_user()[pri:0, instance:Tests.UpdateUserRoleTest@cb5822]" name="Update_user" duration-ms="10865" started-at="2019-07-09T06:54:13Z" finished-at="2019-07-09T06:54:24Z">
+        <test-method status="PASS" signature="Assign_role()[pri:0, instance:Tests.AssignUserRoleTest@cb5822]" name="Assign_role" duration-ms="14602" started-at="2019-07-09T08:15:39Z" finished-at="2019-07-09T08:15:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Update_user -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Tests.UpdateUserRoleTest@cb5822]" name="CloseBrowser" is-config="true" duration-ms="957" started-at="2019-07-09T06:54:24Z" finished-at="2019-07-09T06:54:25Z">
+        </test-method> <!-- Assign_role -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Tests.AssignUserRoleTest@cb5822]" name="CloseBrowser" is-config="true" duration-ms="958" started-at="2019-07-09T08:15:53Z" finished-at="2019-07-09T08:15:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- Tests.UpdateUserRoleTest -->
+      </class> <!-- Tests.AssignUserRoleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
