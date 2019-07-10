@@ -16,7 +16,7 @@ public class CreateUserRolePage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	//********************Web Elements***************************
+			//********************Web Elements***************************
 	
 			By createuserroleBy = By.partialLinkText("Create a User Role");
 			By userRolewhoBy = By.className("custom-control-label");
@@ -31,36 +31,26 @@ public class CreateUserRolePage extends BasePage {
 			public CreateUserRolePage loggedinusercreateRole(String rolename) throws AWTException {
 			
 				click(createuserroleBy);
-				try {
-					Thread.sleep(3000);
-				} catch (InterruptedException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+				ajax_wait(3000);
 				
-			WebElement elu = driver.findElements(userRolewhoBy).get(1);
-			elu.click();
-			click(dropdownBy);
-			Robot robot = new Robot();
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-			robot.keyPress(KeyEvent.VK_ESCAPE);
-			robot.keyRelease(KeyEvent.VK_ESCAPE);
-			click(userrolenameBy);
-			writeText(userrolenameBy,rolename);
-			click(createbtnBy);
+				click_list(userRolewhoBy,1);
+				click(dropdownBy);
 			
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
+				Robot robot = new Robot();
+				robot.keyPress(KeyEvent.VK_ENTER);
+				robot.keyRelease(KeyEvent.VK_ENTER);
+				robot.keyPress(KeyEvent.VK_ESCAPE);
+				robot.keyRelease(KeyEvent.VK_ESCAPE);
+				click(userrolenameBy);
+				writeText(userrolenameBy,rolename);
+				click(createbtnBy);
+				ajax_wait(3000);
 			
-			String URL = driver.getCurrentUrl();
-			Assert.assertEquals(URL, "http://35.232.136.118.xip.io/ma/list-role");
+				String URL = driver.getCurrentUrl();
+				Assert.assertEquals(URL, "http://35.232.136.118.xip.io/ma/list-role");
 		
 			return this;
+			
 			}
 	
 }

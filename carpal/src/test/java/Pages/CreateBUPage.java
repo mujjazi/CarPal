@@ -48,7 +48,7 @@ public class CreateBUPage extends BasePage {
 			
 			
 			click(createbuBy);
-			ajax_wait(5000);
+			ajax_wait(7000);
 			click(companynameBy);
 			writeText(companynameBy,companyname);
 			click(companydescriptionBy);

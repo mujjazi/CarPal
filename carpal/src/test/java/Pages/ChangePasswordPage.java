@@ -24,17 +24,10 @@ public class ChangePasswordPage extends BasePage {
 	//***********************Page Methods*****************************
 	
 	public ChangePasswordPage changepassword(String cpass, String npass, String cnpass) {
+		
 		click(accountBy);
-		WebElement elp = driver.findElements(dropdownitemBy).get(0);
-		elp.click();
-		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+		click_list(dropdownitemBy,0);
+		ajax_wait(3000);
 		writeText(currentpasswordBy,cpass);
 		click(newpasswordBy);
 		writeText(newpasswordBy,npass);
@@ -42,16 +35,11 @@ public class ChangePasswordPage extends BasePage {
 		writeText(confirmnewpasswordBy,cnpass);
 		click(setnewpasswordBy);
 		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		ajax_wait(3000);
 		
 		String curURL = driver.getCurrentUrl();
 		
-		Assert.assertEquals(curURL,"http://35.232.136.118.xip.io/change-password");
+		Assert.assertEquals(curURL,"http://35.232.136.118.xip.io/ma/dashboard");
 		
 		return this;
 	}

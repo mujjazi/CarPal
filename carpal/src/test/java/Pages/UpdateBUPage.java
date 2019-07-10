@@ -24,36 +24,16 @@ public class UpdateBUPage extends BasePage {
 		public UpdateBUPage updatebu(String text) {
 
 			click(viewbuBy);
-			
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
+			ajax_wait(3000);
 			click(updatebulinkBy);
-			
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
+			ajax_wait(3000);		
 			writeText(companynameBy,text);
 			WebElement scroll = driver.findElement(By.tagName("html"));
 			scroll.sendKeys(Keys.END);
-			
 			waitVisibility(btncreatebuBy);
 			click(btncreatebuBy);
+			ajax_wait(5000);
 			
-			try {
-				Thread.sleep(5000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 			String URL = driver.getCurrentUrl();
 			Assert.assertEquals(URL,"http://35.232.136.118.xip.io/ma/list-bu");
 			return this;
