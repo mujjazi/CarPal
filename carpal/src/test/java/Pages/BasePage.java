@@ -18,9 +18,9 @@ public class BasePage {
         wait = new WebDriverWait(driver,15);
     }
     
-    public void ajax_wait() {
+    public void ajax_wait(int i) {
     	try {
-			Thread.sleep(3000);
+			Thread.sleep(i);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

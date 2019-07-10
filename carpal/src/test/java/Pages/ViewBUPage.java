@@ -32,21 +32,12 @@ public class ViewBUPage extends BasePage {
 			public ViewBUPage searchBU (String query) throws AWTException {
 				
 				click(searchbuBy);
-				WebElement els = driver.findElements(searchfieldBy).get(0);
-				els.sendKeys(query);
-				try {
-					Thread.sleep(3000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				ajax_wait(3000);
+				click_list(searchfieldBy,0);
+				driver.findElements(searchfieldBy).get(0).sendKeys("Test");
+				ajax_wait(3000);
 				click(buBy);
-				try {
-					Thread.sleep(3000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				ajax_wait(3000);
 				Assert.assertTrue(driver.findElement(updateBy).isDisplayed());
 				//Click on searched BU
 				//Verify searched BU is appearing and correct

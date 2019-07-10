@@ -32,14 +32,14 @@ public class UpdateUserRolePage extends BasePage {
 	
 		
 	click(listuserroleBy);
-	ajax_wait();
+	ajax_wait(3000);
 		
 	click(listuserroletestBy);
-	ajax_wait();
+	ajax_wait(3000);
 	click(userrolenameBy);
 	writeText(userrolenameBy,urolename);
 	click(updatebtnBy);
-	ajax_wait();
+	ajax_wait(5000);
 	String URL = driver.getCurrentUrl();
 	Assert.assertEquals(URL, "http://35.232.136.118.xip.io/ma/list-role");
 

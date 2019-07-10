@@ -48,7 +48,7 @@ public class CreateBUPage extends BasePage {
 			
 			
 			click(createbuBy);
-			ajax_wait();
+			ajax_wait(5000);
 			click(companynameBy);
 			writeText(companynameBy,companyname);
 			click(companydescriptionBy);
@@ -76,19 +76,19 @@ public class CreateBUPage extends BasePage {
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
-			ajax_wait();
+			ajax_wait(3000);
 			robot.keyPress(KeyEvent.VK_ENTER);
 			robot.keyRelease(KeyEvent.VK_ENTER);
 			
 			WebElement scroll = driver.findElement(By.tagName("html"));
 			scroll.sendKeys(Keys.END);
 			
-			ajax_wait();
+			ajax_wait(3000);
 			
 			waitVisibility(btncreatebuBy);
 			click(btncreatebuBy);
 			
-			ajax_wait();
+			ajax_wait(5000);
 			
 			String URL = driver.getCurrentUrl();
 			Assert.assertEquals(URL,"http://35.232.136.118.xip.io/ma/list-bu");

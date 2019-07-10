@@ -32,7 +32,7 @@ public class CreateUserPage extends BasePage {
 			public CreateUserPage loggedinusercreate(String uname) throws AWTException {
 			
 				click(createuserroleBy);
-				ajax_wait();
+				ajax_wait(3000);
 				click_list(radiobtnBy, 1);
 				click_list(arrowdropdownBy,0);
 				Robot robot = new Robot();
@@ -43,7 +43,7 @@ public class CreateUserPage extends BasePage {
 				writeText(emailBy,"uname" + "@mailinator.com");
 				click(createuserbtnBy);
 				
-				ajax_wait();
+				ajax_wait(5000);
 				String URL = driver.getCurrentUrl();
 				Assert.assertEquals(URL,"http://35.232.136.118.xip.io/ma/list-user");
 				return this;

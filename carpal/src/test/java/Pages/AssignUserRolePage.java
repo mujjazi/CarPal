@@ -30,19 +30,19 @@ public class AssignUserRolePage extends BasePage {
 		public AssignUserRolePage loggedinuserassignRole(String urolename) throws AWTException {
 		
 			click(listuserroleBy);
-			ajax_wait();
+			ajax_wait(3000);
 			click(rolerightsBy);
-			ajax_wait();
+			ajax_wait(3000);
 			WebElement els = driver.findElements(subClientBy).get(7);
 			els.click();
-			ajax_wait();
+			ajax_wait(3000);
 			click(subclientBy);
 			
 			WebElement elc = driver.findElements(checkboxBy).get(1);
 			elc.click();
 			
 			click(savebtnBy);	
-			ajax_wait();
+			ajax_wait(3000);
 			String URL = driver.getCurrentUrl();
 			Assert.assertEquals(URL, "http://35.232.136.118.xip.io/ma/list-role");
 
